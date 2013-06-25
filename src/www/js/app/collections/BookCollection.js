@@ -73,8 +73,31 @@ define(function(require) {
       StateModel.trigger('search:stop', 'stop');
       this.loading = false;
       if (this.count() === 0) {
-        StateModel.trigger("search:noResults", "No Books Found :(");
+        StateModel.trigger("search:noResults", { message: "No Books Found :(" });
       }
+    },
+
+    /**
+     * @method onFetchSuccess
+     * Processes the data received from a fetch request
+     *
+     * @param {Object} response  The response data
+     */
+    onFetchSuccess: function(response) {
+      var list;
+      response = this.parse(response);
+      if (this.responseFilter && typeof this.responseFilter === 'function') {
+        response = this.responseFilter(response);
+      }
+      list = response;
+      if (!(list instanceof Array)) {
+        this.apply(response);
+        if (response && response.hasOwnProperty(this.itemsProperty)) {
+          list = response[this.itemsProperty];
+        }
+      }
+      this.add.apply(this, list);
+      this.trigger('fetchSuccess', {response: response});
     },
 
     searchFailure: function(res) {

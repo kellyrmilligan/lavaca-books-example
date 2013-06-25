@@ -67,7 +67,8 @@ define(function(require) {
       this.ui.books.append(fragment);
     },
 
-    showMessage: function (message) {
+    showMessage: function (e) {
+      var message = e.message;
       this.ui.books.html('<h1 class="notFound">' + message + '</h1>');
     },
 
