@@ -13,7 +13,8 @@ require.config({
     'rdust': 'libs/require-dust',
     'iScroll': 'libs/iscroll-lite-4.1.6',
     'lavaca': 'Lavaca',
-    'Lavaca': 'lavaca'
+    'Lavaca': 'lavaca',
+    'bootstrap': 'libs/bootstrap.min'
   },
   shim: {
     $: {
@@ -30,6 +31,9 @@ require.config({
     },
     templates: {
       deps: ['dust']
+    },
+    bootstrap:{
+      deps: ['$']
     }
   }
 });
