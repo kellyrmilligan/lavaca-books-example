@@ -4,12 +4,14 @@ define(function(require) {
   var Detection = require('lavaca/env/Detection');
   var BookController = require('./net/BookController');
   var ModalView = require('app/ui/views/controls/ModalView');
+  var MenuView = require('app/ui/views/controls/MenuView');
   var Connectivity = require('lavaca/net/Connectivity');
   var BooksApplication = require('app/mvc/BooksApplication');
   var Translation = require('lavaca/util/Translation');
   var localStore = require('./cache/localStore');
   var stateModel = require('app/models/StateModel');
-  require('lavaca/ui/DustTemplate');
+  var favoriteCollection = require('app/collections/FavoriteCollection');
+    require('lavaca/ui/DustTemplate');
   require('jquery-mobile/events/touch');
   require('jquery-mobile/events/orientationchange');
 
@@ -29,8 +31,9 @@ define(function(require) {
     stateModel.set('lang', localStore.get('lang') || 'en_US');
     //initialize translations
     Translation.init(stateModel.get('lang'));
-    //render header view
+    //render controls
     var modal = new ModalView('#modal');
+    var menu = new MenuView('#menu');
   });
 
   // Setup offline AJAX handler

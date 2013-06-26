@@ -4,15 +4,18 @@ html, body {
 }
 
 #menu {
-  display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
+  float: left;
+  margin-top: 20px;
+  font-size: 2.8rem;
 }
 
 #menu a {
   text-decoration: none;
   color: #fff;
   display: block;
+  margin-bottom: 12px;
 }
 
 #content {
@@ -211,12 +214,18 @@ html, body {
   font-size: 1.9rem;
 }
 
-.bookDetail a {
+.bookDetail .favorite {
+  margin-top: 5px;
+}
+
+.bookDetail a, .bookDetail .favorite span {
   color: rgb(57,96,150);
   text-decoration: none;
   font-size:1.8rem;
+  line-height: 1.9rem;
 }
-.bookDetail a:hover {
+
+.bookDetail a:hover, .bookDetail .favorite span:hover {
   text-decoration: underline;
 }
 .library::-webkit-scrollbar {

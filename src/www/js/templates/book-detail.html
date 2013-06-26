@@ -11,4 +11,11 @@
 {:else}
 </p>No description found.</p>
 {/volumeInfo.description}
-<p>Google link :</p> <a href="http://books.google.fr/books?id={id}" target="_blank">http://books.google.fr/books?id={id}</a>
+<div><p>Google link :</p> <a href="http://books.google.fr/books?id={id}" target="_blank">http://books.google.fr/books?id={id}</a></div>
+<div class="favorite">
+    {?isFavorite}
+        <span class="remove">Remove from favorites</span>
+    {:else}
+        <span class="add">Add to favorites</span>
+    {/isFavorite}
+</div>

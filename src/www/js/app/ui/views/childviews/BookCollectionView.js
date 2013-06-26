@@ -2,6 +2,8 @@ define(function(require) {
 
   var View = require('lavaca/mvc/View'),
       BookItemView = require('app/ui/views/childviews/BookItemView'),
+      BookModel = require('app/models/BookModel'),
+      clone = require('mout/lang/deepClone'),
       StateModel = require('app/models/StateModel');
   require('rdust!templates/book-list');
 
@@ -60,7 +62,7 @@ define(function(require) {
     onBookFetch: function (e) {
       var fragment = document.createDocumentFragment();
       for (var l = this.model.count(); this.bookViewIndex < l; this.bookViewIndex++) {
-        var model = this.model.itemAt(this.bookViewIndex);
+        var model = new BookModel(clone(this.model.itemAt(this.bookViewIndex).toObject()));
         this.bookViews.push(new this.itemView($('<div>'), model));
         fragment.appendChild(this.bookViews[this.bookViews.length - 1].el[0]);
       }

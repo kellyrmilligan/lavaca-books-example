@@ -3,7 +3,6 @@ define(function(require) {
   var View = require('lavaca/mvc/View'),
       bootstrap = require('bootstrap'),
       StateModel = require('app/models/StateModel');
-  require('rdust!templates/book-detail');
 
   /**
    * @class app.ui.views.controls.ModalView
@@ -29,20 +28,20 @@ define(function(require) {
      */
     className: null,
 
-    modalViews: [],
+    modalView: null,
 
     renderModal: function (e) {
       var view = e.view;
-      this.modalViews.push(view);
-      this.el.append(this.modalViews[0].el);
+      this.modalView = view;
+      this.el.append(this.modalView.el);
       this.el.modal('show');
     },
 
     closeModal: function (e) {
       this.el.modal('hide');
-      var oldView = this.modalViews.splice(0,1);
-      oldView[0].dispose();
-      oldView[0].el.remove();
+      this.modalView.el.remove();
+      this.modalView.dispose();
+      this.modalView = null;
     },
 
     dispose: function () {
