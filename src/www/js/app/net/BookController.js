@@ -1,6 +1,8 @@
 define(function(require) {
 
   var BooksView = require('app/ui/views/BooksView'),
+      FavoritesView = require('app/ui/views/FavoritesView'),
+      favoriteCollection = require('app/collections/FavoriteCollection'),
       BaseController = require('app/net/BaseController'),
       Translation = require('lavaca/util/Translation'),
       localStore = require('app/cache/localStore'),
@@ -23,8 +25,15 @@ define(function(require) {
     index: function(params, model) {
 
       return this
-        .view(null, BooksView, model)
+        .view(null, BooksView, stateModel)
         .then(this.updateState(model, 'Books', params.url));
+    },
+
+    favorites: function(params, model) {
+
+      return this
+        .view(null, FavoritesView, favoriteCollection)
+        .then(this.updateState(model, 'Favorites', params.url));
     }
 
   });

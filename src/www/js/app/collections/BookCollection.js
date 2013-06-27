@@ -2,6 +2,7 @@ define(function(require) {
   var Collection = require('lavaca/mvc/Collection');
   var BookModel = require('app/models/BookModel');
   var StateModel = require('app/models/StateModel');
+  var favoriteCollection = require('app/collections/FavoriteCollection');
 
   var BookCollection = Collection.extend(function() {
     Collection.apply(this, arguments);

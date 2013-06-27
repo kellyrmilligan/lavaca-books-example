@@ -1,9 +1,7 @@
 define(function(require) {
 
   var View = require('lavaca/mvc/View'),
-      stateModel = require('app/models/StateModel'),
-      favoriteCollection = require('app/collections/FavoriteCollection'),
-      clone = require('mout/lang/deepClone');
+      stateModel = require('app/models/StateModel');
   require('rdust!templates/book-detail');
 
   /**

@@ -2,39 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/www/js/app/collections/FavoritesCollection.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/collections/BookCollection.js" afterPath="$PROJECT_DIR$/src/www/js/app/collections/BookCollection.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookCollectionView.js" afterPath="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookCollectionView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/net/BookController.js" afterPath="$PROJECT_DIR$/src/www/js/app/net/BookController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookDetailView.js" afterPath="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookDetailView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookItemView.js" afterPath="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookItemView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/models/BookModel.js" afterPath="$PROJECT_DIR$/src/www/js/app/models/BookModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/ui/views/controls/ModalView.js" afterPath="$PROJECT_DIR$/src/www/js/app/ui/views/controls/ModalView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/collections/FavoriteCollection.js" afterPath="$PROJECT_DIR$/src/www/js/app/collections/FavoriteCollection.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/app/app.js" afterPath="$PROJECT_DIR$/src/www/js/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/js/templates/book-detail.html" afterPath="$PROJECT_DIR$/src/www/js/templates/book-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/app/books-app.less" afterPath="$PROJECT_DIR$/src/www/css/app/books-app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/www/css/app/main.less" afterPath="$PROJECT_DIR$/src/www/css/app/main.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="local.lavaca.books.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372169131609" ignored="false" />
+    <file path="/Dummy.txt" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372342298895" ignored="false" />
     <file path="/index.html" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372170017216" ignored="false" />
     <file path="/app.less" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1371926386657" ignored="false" />
     <file path="$PROJECT_DIR$/../bbmarionette-books-tutorial/assets/css/main.css" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1371926360352" ignored="false" />
     <file path="/books-app.less" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372255753952" ignored="false" />
-    <file path="/BookController.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1371928646919" ignored="false" />
+    <file path="/BookController.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372342883630" ignored="false" />
     <file path="$PROJECT_DIR$/../bbmarionette-books-tutorial/js/main.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372167661543" ignored="false" />
     <file path="/main.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372167584898" ignored="false" />
-    <file path="/app.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372255279574" ignored="false" />
+    <file path="/app.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372342333164" ignored="false" />
     <file path="/BooksView.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1371929729781" ignored="false" />
     <file path="$PROJECT_DIR$/../bbmarionette-books-tutorial/js/layouts/AppLayout.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372253305711" ignored="false" />
     <file path="/a.dummy" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372258176077" ignored="false" />
-    <file path="/a.php" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1371928995836" ignored="false" />
+    <file path="/a.php" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372343031666" ignored="false" />
     <file path="/a.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1371930524490" ignored="false" />
     <file path="/SearchView.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372195510621" ignored="false" />
-    <file path="/BookCollectionView.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372265559606" ignored="false" />
+    <file path="/BookCollectionView.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372272988590" ignored="false" />
     <file path="/SearchModel.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1371930320977" ignored="false" />
     <file path="/BookCollection.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372197976850" ignored="false" />
     <file path="/book-list.html" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372018712837" ignored="false" />
-    <file path="/BookModel.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372263847745" ignored="false" />
-    <file path="/BookItemView.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372083082970" ignored="false" />
+    <file path="/BookModel.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372273970180" ignored="false" />
+    <file path="/BookItemView.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372344231293" ignored="false" />
     <file path="/book-item.html" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372017888903" ignored="false" />
     <file path="/main.less" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372254885570" ignored="false" />
     <file path="/books.html" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372019220045" ignored="false" />
@@ -71,6 +72,8 @@
     <file path="/menu.html" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372254479323" ignored="false" />
     <file path="/FavoritesCollection.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372255145990" ignored="false" />
     <file path="/FavoriteCollection.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372265246582" ignored="false" />
+    <file path="/FavoritesView.js" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372345834106" ignored="false" />
+    <file path="/a.html" changelist="df3d8eb4-71ab-4ae0-815b-b2bdfbf7c7e7" time="1372343040469" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,37 +98,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BookDetailView.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookDetailView.js">
+      <file leaf-file-name="BookController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/js/app/net/BookController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="15" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.5865019">
+            <state line="35" column="45" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/js/app/models/BookModel.js">
+      <file leaf-file-name="BooksView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/BooksView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="41" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+            <state line="8" column="24" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModalView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/controls/ModalView.js">
+      <file leaf-file-name="FavoritesView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/FavoritesView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="6" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+            <state line="16" column="52" selection-start="524" selection-end="524" vertical-scroll-proportion="-1.1231618">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/js/Lavaca/mvc/View.js">
+      <file leaf-file-name="boot.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/js/app/boot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="655" column="13" selection-start="22398" selection-end="22398" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="20" selection-start="160" selection-end="160" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -134,7 +146,25 @@
       <file leaf-file-name="BookItemView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookItemView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="21" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
+            <state line="23" column="57" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collection.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/js/Lavaca/mvc/Collection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="370" column="49" selection-start="12083" selection-end="12085" vertical-scroll-proportion="-6.72">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/BaseView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="21" selection-start="2941" selection-end="2941" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,25 +173,7 @@
       <file leaf-file-name="BookCollectionView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookCollectionView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="27" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="book-detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/js/templates/book-detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="8" selection-start="698" selection-end="698" vertical-scroll-proportion="-11.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookCollection.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/js/app/collections/BookCollection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="7" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.0">
+            <state line="63" column="78" selection-start="1850" selection-end="1920" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,16 +182,7 @@
       <file leaf-file-name="FavoriteCollection.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/js/app/collections/FavoriteCollection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="books-app.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/css/app/books-app.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="53" selection-start="4711" selection-end="4711" vertical-scroll-proportion="-18.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,30 +206,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/www/js/app/ui/views/BooksView.js" />
-        <option value="$PROJECT_DIR$/src/www/css/app/app.less" />
-        <option value="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/SearchView.js" />
-        <option value="$PROJECT_DIR$/src/www/js/app/collections/BookCollection.js" />
-        <option value="$PROJECT_DIR$/src/www/js/app/ui/views/controls/MenuView.js" />
         <option value="$PROJECT_DIR$/src/www/js/templates/menu.html" />
         <option value="$PROJECT_DIR$/src/www/css/app/main.less" />
         <option value="$PROJECT_DIR$/src/www/js/app/collections/FavoritesCollection.js" />
-        <option value="$PROJECT_DIR$/src/www/js/app/app.js" />
         <option value="$PROJECT_DIR$/src/www/css/app/books-app.less" />
         <option value="$PROJECT_DIR$/src/www/js/templates/book-detail.html" />
         <option value="$PROJECT_DIR$/src/www/js/app/ui/views/controls/ModalView.js" />
-        <option value="$PROJECT_DIR$/src/www/js/app/models/BookModel.js" />
-        <option value="$PROJECT_DIR$/src/www/js/app/collections/FavoriteCollection.js" />
-        <option value="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookCollectionView.js" />
         <option value="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookDetailView.js" />
+        <option value="$PROJECT_DIR$/src/www/js/app/collections/FavoriteCollection.js" />
+        <option value="$PROJECT_DIR$/src/www/js/app/models/BookModel.js" />
+        <option value="$PROJECT_DIR$/src/www/js/app/collections/BookCollection.js" />
+        <option value="$PROJECT_DIR$/src/www/js/app/app.js" />
+        <option value="$PROJECT_DIR$/src/www/js/app/net/BookController.js" />
+        <option value="$PROJECT_DIR$/src/www/js/templates/favorites.html" />
+        <option value="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookItemView.js" />
+        <option value="$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookCollectionView.js" />
+        <option value="$PROJECT_DIR$/src/www/js/app/ui/views/FavoritesView.js" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="y" value="-214" />
-    <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -356,7 +359,109 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.lavaca.books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.lavaca.books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.lavaca.books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.lavaca.books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.lavaca.books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.lavaca.books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="function" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,79 +517,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.lavaca.books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.lavaca.books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.lavaca.books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.lavaca.books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="childviews" />
+              <option name="myItemId" value="collections" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -532,19 +565,20 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/www/js" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/www/js/templates" />
+      <recent name="$PROJECT_DIR$/src/www/js/app/ui/views" />
       <recent name="$PROJECT_DIR$/src/www/js/app/collections" />
       <recent name="$PROJECT_DIR$/src/www/js/app/ui/views/controls" />
       <recent name="$PROJECT_DIR$/src/www/js/app/ui/views/childviews" />
-      <recent name="$PROJECT_DIR$/src/www/js/app/models" />
-      <recent name="$PROJECT_DIR$/src/www/js/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/www/js/app/collections" />
@@ -588,15 +622,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-214" width="1920" height="1200" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="713" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6712963" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16435432" sideWeight="0.6728499" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23987034" sideWeight="0.6728499" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -605,6 +638,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -671,9 +705,83 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/www/js/app/cache/localStore.js">
+    <entry file="file://$PROJECT_DIR$/src/www/js/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="73" selection-start="629" selection-end="700" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/templates/favorites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="126" selection-end="126" vertical-scroll-proportion="0.115384616">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/templates/books.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="53" selection-end="53" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/templates/book-list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="160" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/childviews/SearchView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/BaseView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="21" selection-start="2941" selection-end="2941" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/app/net/BookController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="45" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/BooksView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/js/Lavaca/mvc/Collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="370" column="49" selection-start="12083" selection-end="12085" vertical-scroll-proportion="-6.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="20" selection-start="160" selection-end="160" vertical-scroll-proportion="-4.375">
           <folding />
         </state>
       </provider>
@@ -685,100 +793,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/app/collections/FavoritesCollection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="21" selection-start="907" selection-end="907" vertical-scroll-proportion="0.9132841">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/css/app/books-app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="53" selection-start="4711" selection-end="4711" vertical-scroll-proportion="-18.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/app/collections/BookCollection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="7" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/templates/book-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="698" selection-end="698" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/Lavaca/mvc/Collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="236" selection-end="275" vertical-scroll-proportion="0.29032257">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/Lavaca/Lavaca.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="3" selection-start="4079" selection-end="4079" vertical-scroll-proportion="2.7385058">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/Lavaca/mvc/View.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="655" column="13" selection-start="22398" selection-end="22398" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookItemView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="21" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
+        <state line="23" column="57" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/js/app/collections/FavoriteCollection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookCollectionView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="27" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.0">
+        <state line="63" column="78" selection-start="1850" selection-end="1920" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/app/models/BookModel.js">
+    <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/FavoritesView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="41" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/controls/ModalView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="6" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js/app/ui/views/childviews/BookDetailView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="15" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.5865019">
+        <state line="16" column="52" selection-start="524" selection-end="524" vertical-scroll-proportion="-1.1231618">
           <folding />
         </state>
       </provider>

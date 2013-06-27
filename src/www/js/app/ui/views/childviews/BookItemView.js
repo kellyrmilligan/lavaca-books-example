@@ -21,6 +21,8 @@ define(function(require) {
 
       this.render();
 
+      this.el.attr('data-book-id', this.model.get('id'));
+
     }, {
     /**
      * @field {String} template

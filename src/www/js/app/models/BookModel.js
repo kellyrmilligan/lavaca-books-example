@@ -4,7 +4,6 @@ define(function(require) {
 
   var BookModel = Model.extend(function() {
     Model.apply(this, arguments);
-
   },{
 
   });

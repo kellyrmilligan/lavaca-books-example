@@ -11,7 +11,7 @@ define(function(require) {
   var localStore = require('./cache/localStore');
   var stateModel = require('app/models/StateModel');
   var favoriteCollection = require('app/collections/FavoriteCollection');
-    require('lavaca/ui/DustTemplate');
+  require('lavaca/ui/DustTemplate');
   require('jquery-mobile/events/touch');
   require('jquery-mobile/events/orientationchange');
 
@@ -26,7 +26,8 @@ define(function(require) {
   var app = new BooksApplication(function () {
     // Initialize the routes
     this.router.add({
-      '/': [BookController, 'index']
+      '/': [BookController, 'index'],
+      '/favorites' : [BookController, 'favorites']
     });
     stateModel.set('lang', localStore.get('lang') || 'en_US');
     //initialize translations

@@ -26,12 +26,10 @@ define(function(require) {
 
     addFavorite: function (e) {
       this.add(e.model);
-      console.log(this.count());
     },
 
     removeFavorite: function (e) {
       this.remove(e.model);
-      console.log(this.count());
     },
 
     search: function (e) {

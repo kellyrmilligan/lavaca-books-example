@@ -16,9 +16,6 @@ define(function(require) {
       View.apply(this, arguments);
 
       this.mapEvent({
-        '#bookList': {
-          'scroll': this.loadMoreBooks.bind(this)
-        },
         model: {
           fetchSuccess: this.onBookFetch.bind(this)
         }
@@ -62,7 +59,7 @@ define(function(require) {
     onBookFetch: function (e) {
       var fragment = document.createDocumentFragment();
       for (var l = this.model.count(); this.bookViewIndex < l; this.bookViewIndex++) {
-        var model = new BookModel(clone(this.model.itemAt(this.bookViewIndex).toObject()));
+        var model = this.model.itemAt(this.bookViewIndex);
         this.bookViews.push(new this.itemView($('<div>'), model));
         fragment.appendChild(this.bookViews[this.bookViews.length - 1].el[0]);
       }
