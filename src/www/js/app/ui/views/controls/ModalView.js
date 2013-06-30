@@ -46,6 +46,7 @@ define(function(require) {
 
     dispose: function () {
       StateModel.off('modal:show', this.renderModal.bind(this));
+      this.el.off('hidden', this.closeModal.bind(this));
       return View.prototype.dispose.apply(this, arguments);
     }
 

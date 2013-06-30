@@ -218,7 +218,7 @@ define(function(require) {
             ArrayUtils.remove(this.changedItems, model);
             ArrayUtils.pushIfNotExists(this.addedItems, model);
           }
-          _triggerItemEvent(this, 'addItem', null, insertIndex, this.models[i]);
+          _triggerItemEvent(this, 'addItem', null, insertIndex, this.models[insertIndex]);
           insertIndex++;
           result = true;
         } else {

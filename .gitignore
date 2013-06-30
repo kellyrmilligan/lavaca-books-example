@@ -2,6 +2,7 @@
 
 /libs/atnotate/atnotate.pyc
 .idea
+.idea/workspace.xml
 
 /src/android/.classpath
 /src/android/.project

@@ -18,8 +18,8 @@ define(function(require) {
 
     this.mapEvent({
       model: {
-        removeItem: debounce(this.onRemoveItem.bind(this), 100),
-        addItem: debounce(this.onAddItem.bind(this), 100)
+        removeItem: this.onRemoveItem.bind(this),
+        addItem: this.onAddItem.bind(this)
       }
     });
 
@@ -66,17 +66,18 @@ define(function(require) {
       for (var l=this.bookViews.length, i=0; i < l; i++) {
         var view  = this.bookViews[i];
         if (view.model.get('id') === e.model.get('id')) {
-          this.bookViews.splice(i, 1);
+          var removedView = this.bookViews.splice(i, 1);
+          removedView[0].dispose();
+          removedView[0] = null;
+          removedView = null;
           return;
         }
       }
     },
 
     onAddItem: function(e) {
-      var fragment = document.createDocumentFragment();
       this.bookViews.push(new this.itemView($('<div>'), e.model));
-      fragment.appendChild(this.bookViews[this.bookViews.length - 1].el[0]);
-      this.ui.books.append(fragment);
+      this.ui.books.append(this.bookViews[this.bookViews.length -1].el[0]);
     }
 
 

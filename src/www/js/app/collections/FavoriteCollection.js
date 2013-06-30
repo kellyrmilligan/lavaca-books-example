@@ -2,6 +2,7 @@ define(function(require) {
   var Collection = require('lavaca/mvc/Collection');
   var BookModel = require('app/models/BookModel');
   var stateModel = require('app/models/StateModel');
+  var debounce = require('mout/function/debounce');
 
   var FavoriteCollection = Collection.extend(function() {
     Collection.apply(this, arguments);
@@ -9,6 +10,14 @@ define(function(require) {
     stateModel.on('favorite:add', this.addFavorite, this);
     stateModel.on('favorite:remove', this.removeFavorite, this);
     stateModel.on('favorite:search', this.search, this);
+
+    if (localStorage.getItem('books:favorites')) {
+      var obj = JSON.parse(localStorage.getItem('books:favorites'));
+      this.add(obj[this.itemsProperty]);
+    }
+
+    this.on('addItem', debounce(this.storeData, 300), this);
+    this.on('removeItem', debounce(this.storeData, 300), this);
   },{
 
     /**
@@ -30,6 +39,10 @@ define(function(require) {
 
     removeFavorite: function (e) {
       this.remove(e.model);
+    },
+
+    storeData: function(e) {
+      localStorage.setItem('books:favorites', JSON.stringify(this.toObject()));
     },
 
     search: function (e) {
