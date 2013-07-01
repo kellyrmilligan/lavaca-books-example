@@ -4,7 +4,7 @@ define(function(require) {
       BookItemView = require('app/ui/views/childviews/BookItemView'),
       BookModel = require('app/models/BookModel'),
       clone = require('mout/lang/deepClone'),
-      StateModel = require('app/models/StateModel');
+      stateModel = require('app/models/StateModel');
   require('rdust!templates/book-list');
 
   /**
@@ -31,10 +31,10 @@ define(function(require) {
         bookList: this.el.find('#bookList')
       };
 
-      StateModel.on('search:error', this.showMessage, this);
-      StateModel.on('search:noSearchTerm', this.showMessage , this);
-      StateModel.on('search:noResults', this.showMessage, this);
-      StateModel.on('search:clearMessage', this.clearMessage, this);
+      stateModel.on('search:error', this.showMessage, this);
+      stateModel.on('search:noSearchTerm', this.showMessage , this);
+      stateModel.on('search:noResults', this.showMessage, this);
+      stateModel.on('search:clearMessage', this.clearMessage, this);
 
     }, {
     /**
@@ -88,11 +88,11 @@ define(function(require) {
     },
 
     dispose: function () {
-      StateModel.off('search:error', this.showMessage, this);
-      StateModel.off('search:noSearchTerm', this.showMessage , this);
-      StateModel.off('search:noResults', this.showMessage, this);
-      StateModel.off('search:clearMessage', this.clearMessage, this);
-      StateModel.set('previousSearch', this.collection.previousSearch);
+      stateModel.off('search:error', this.showMessage, this);
+      stateModel.off('search:noSearchTerm', this.showMessage , this);
+      stateModel.off('search:noResults', this.showMessage, this);
+      stateModel.off('search:clearMessage', this.clearMessage, this);
+      stateModel.set('previousSearch', this.collection.previousSearch);
       this.el.find('#bookList').off('scroll', this.loadMoreBooks.bind(this));
       return View.prototype.dispose.apply(this, arguments);
     }

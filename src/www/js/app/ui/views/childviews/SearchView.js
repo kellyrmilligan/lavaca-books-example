@@ -27,9 +27,14 @@ define(function(require) {
 
     stateModel.on('search:start', this.toggleSpinner, this);
     stateModel.on('search:stop', this.toggleSpinner, this);
-    stateModel.on('search:term', this.setSearchTerm, this);
 
-    this.ui.searchTerm.val('CSS').change();
+    var term;
+    if (localStorage.getItem('books:search')) {
+      term = localStorage.getItem('books:search');
+    } else {
+      term = 'CSS';
+    }
+    this.ui.searchTerm.val(term).change();
 
   }, {
     /**
@@ -54,15 +59,10 @@ define(function(require) {
       }
     },
 
-    setSearchTerm: function(term) {
-      if (!this.ui.searchTerm.val()) {
-        this.ui.searchTerm.val(term);
-      }
-    },
-
     search: function () {
       var searchTerm = this.ui.searchTerm.val().trim();
       if (searchTerm.length > 0) {
+        localStorage.setItem('books:search', searchTerm);
         stateModel.trigger('search:clearMessage');
         stateModel.trigger('search:term', { term: searchTerm, reset:true });
       } else {
@@ -73,7 +73,6 @@ define(function(require) {
     dispose: function () {
       stateModel.off('search:start', this.toggleSpinner, this);
       stateModel.off('search:stop', this.toggleSpinner, this);
-      stateModel.off('search:term', this.setSearchTerm, this);
 
       return View.prototype.dispose.apply(this, arguments);
     }

@@ -4,9 +4,9 @@ define(function(require) {
   require('rdust!templates/books');
   var Config = require('lavaca/util/Config');
   var SearchView = require('./childviews/SearchView');
-  var SearchModel = require('../../models/SearchModel');
+  var searchModel = require('../../models/SearchModel');
   var BookCollectionView = require('./childViews/BookCollectionView');
-  var BookCollection = require('../../collections/BookCollection');
+  var bookCollection = require('../../collections/BookCollection');
 
   /**
    * @class app.ui.views.BooksView
@@ -20,11 +20,11 @@ define(function(require) {
     this.mapChildView({
       '#searchBar': {
         TView: SearchView,
-        model: SearchModel
+        model: searchModel
       },
       '#bookContainer': {
         TView: BookCollectionView,
-        model: BookCollection
+        model: bookCollection
       }
     });
 

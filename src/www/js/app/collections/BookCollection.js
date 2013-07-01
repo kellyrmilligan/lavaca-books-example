@@ -1,14 +1,14 @@
 define(function(require) {
   var Collection = require('lavaca/mvc/Collection');
   var BookModel = require('app/models/BookModel');
-  var StateModel = require('app/models/StateModel');
+  var stateModel = require('app/models/StateModel');
   var favoriteCollection = require('app/collections/FavoriteCollection');
 
   var BookCollection = Collection.extend(function() {
     Collection.apply(this, arguments);
 
-    StateModel.on('search:term', this.search, this);
-    StateModel.on('search:more', this.moreBooks, this);
+    stateModel.on('search:term', this.search, this);
+    stateModel.on('search:more', this.moreBooks, this);
   },{
 
     /**
@@ -60,21 +60,22 @@ define(function(require) {
       };
 
 
-      StateModel.trigger("search:start", { start: 'start'});
+      stateModel.trigger("search:start", { start: 'start'});
 
       this.loading = true;
 
       this.fetch(opts)
-        .then(this.searchSuccess.bind(this), this.searchFailure.bind(this));
+        .then(this.searchSuccess.bind(this),
+              this.searchFailure.bind(this));
 
       this.previousSearch = searchTerm;
     },
 
     searchSuccess: function(res) {
-      StateModel.trigger('search:stop', 'stop');
+      stateModel.trigger('search:stop', 'stop');
       this.loading = false;
       if (this.count() === 0) {
-        StateModel.trigger("search:noResults", { message: "No Books Found :(" });
+        stateModel.trigger("search:noResults", { message: "No Books Found :(" });
       }
     },
 
@@ -102,7 +103,7 @@ define(function(require) {
     },
 
     searchFailure: function(res) {
-      StateModel.trigger("search:error", "Error, please retry later :s");
+      stateModel.trigger("search:error", "Error, please retry later :s");
       this.loading = false;
     },
 
@@ -127,8 +128,8 @@ define(function(require) {
     },
 
     dispose: function () {
-      StateModel.off('search:term', this.search, this);
-      StateModel.off('search:more', this.moreBooks, this);
+      stateModel.off('search:term', this.search, this);
+      stateModel.off('search:more', this.moreBooks, this);
 
       return Collection.prototype.dispose.apply(this, arguments);
     }

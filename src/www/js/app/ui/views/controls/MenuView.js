@@ -1,7 +1,7 @@
 define(function(require) {
 
   var View = require('lavaca/mvc/View'),
-      StateModel = require('app/models/StateModel');
+      stateModel = require('app/models/StateModel');
   require('rdust!templates/menu');
 
   /**

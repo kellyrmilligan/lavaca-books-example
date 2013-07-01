@@ -2,7 +2,7 @@ define(function(require) {
 
   var View = require('lavaca/mvc/View'),
       bootstrap = require('bootstrap'),
-      StateModel = require('app/models/StateModel');
+      stateModel = require('app/models/StateModel');
 
   /**
    * @class app.ui.views.controls.ModalView
@@ -11,7 +11,7 @@ define(function(require) {
    */
   var ModalView = View.extend(function () {
       View.apply(this, arguments);
-      StateModel.on('modal:show', this.renderModal.bind(this));
+      stateModel.on('modal:show', this.renderModal.bind(this));
 
       this.el.on('hidden', this.closeModal.bind(this));
     }, {
@@ -45,7 +45,7 @@ define(function(require) {
     },
 
     dispose: function () {
-      StateModel.off('modal:show', this.renderModal.bind(this));
+      stateModel.off('modal:show', this.renderModal.bind(this));
       this.el.off('hidden', this.closeModal.bind(this));
       return View.prototype.dispose.apply(this, arguments);
     }

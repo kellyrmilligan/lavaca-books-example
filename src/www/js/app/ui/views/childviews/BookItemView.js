@@ -2,7 +2,7 @@ define(function(require) {
 
   var View = require('lavaca/mvc/View'),
       BookDetailView = require('app/ui/views/childviews/BookDetailView'),
-      StateModel = require('app/models/StateModel');
+      stateModel = require('app/models/StateModel');
   require('rdust!templates/book-item');
 
   /**
@@ -39,7 +39,7 @@ define(function(require) {
 
     showBookDetail: function () {
       var detailView = new BookDetailView($('<div>'),this.model);
-      StateModel.trigger('modal:show', {view: detailView});
+      stateModel.trigger('modal:show', {view: detailView});
     }
 
 
