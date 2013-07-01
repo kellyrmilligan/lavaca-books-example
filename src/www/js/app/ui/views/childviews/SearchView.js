@@ -28,10 +28,8 @@ define(function(require) {
     stateModel.on('search:start', this.toggleSpinner, this);
     stateModel.on('search:stop', this.toggleSpinner, this);
 
-    var term;
-    if (localStorage.getItem('books:search')) {
-      term = localStorage.getItem('books:search');
-    } else {
+    var term = this.model.get('term');
+    if (!term) {
       term = 'CSS';
     }
     this.ui.searchTerm.val(term).change();
@@ -62,7 +60,7 @@ define(function(require) {
     search: function () {
       var searchTerm = this.ui.searchTerm.val().trim();
       if (searchTerm.length > 0) {
-        localStorage.setItem('books:search', searchTerm);
+        this.model.set('term', searchTerm);
         stateModel.trigger('search:clearMessage');
         stateModel.trigger('search:term', { term: searchTerm, reset:true });
       } else {

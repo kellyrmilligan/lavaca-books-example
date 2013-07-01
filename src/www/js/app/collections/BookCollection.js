@@ -136,5 +136,5 @@ define(function(require) {
 
   });
 
-  return new BookCollection();
+  return BookCollection;
 });

@@ -83,7 +83,7 @@ define(function(require) {
 
       // if we are closer than 'margin' to the end of the content, load more books
       if (scrollTop + margin >= totalHeight) {
-        StateModel.trigger("search:more");
+        stateModel.trigger("search:more");
       }
     },
 
