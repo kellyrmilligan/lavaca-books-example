@@ -6,16 +6,17 @@ html, body {
 #menu {
   padding-left: 10px;
   padding-right: 10px;
-  float: left;
   margin-top: 20px;
   font-size: 2.8rem;
+  text-align: center;
 }
 
 #menu a {
   text-decoration: none;
   color: #fff;
-  display: block;
+  display: inline-block;
   margin-bottom: 12px;
+  margin-right: 20px
 }
 
 #content {
@@ -33,7 +34,7 @@ html, body {
 }
 
 #searchBar {
-  width: 770px;
+  width: 90%;
   height: 44px;
   background: url(../../assets/img/books/bgSearch.png);
   margin: auto;
@@ -51,7 +52,7 @@ html, body {
 }
 #searchBar input[type="text"] {
   color: rgb(67, 35, 19);
-  width: 500px;
+  width: 50%;
   border: 1px rgba(67,27,4, 0.4) solid;
   background: rgba(0,0,0,0.1);
   outline: none;
@@ -73,34 +74,44 @@ html, body {
   background: rgba(250,250,250,0.3);
 }
 
+#bookContainer {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  top: 44px;
+  width: 90%;
+}
+
 #bookList {
-  width: 768px;
-  height: 573px;
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   margin: auto;
   background: url(../../assets/img/books/rightBar-plus.png);
   background-position: top right;
+  padding-left: 8px;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   box-shadow: 0 0 20px rgba(0,0,0,1);
   -webkit-box-shadow: 0 0 20px rgba(0,0,0,1);
   -moz-box-shadow: 0 0 20px rgba(0,0,0,1);
-  padding-left: 8px;
 }
 
 .leftBar {
   width: 31px;
   display: table-cell;
-  background: url(../../assets/img/books/leftBar.png);
+  background: url(../../assets/img/books/leftBar.png) repeat-y;
 }
 
 .rightBar {
   width: 31px;
   display: table-cell;
-  background: url(../../assets/img/books/rightBar.png);
+  background: url(../../assets/img/books/rightBar.png) repeat-y;
 }
 
 .books {
-  width: 700px;
   display: table-cell;
   background: url(../../assets/img/books/bgLibrary.png);
 }
@@ -275,4 +286,37 @@ a.close:hover {
   position: fixed;
   left: 15px;
   bottom: 10px;
+}
+
+@media only screen and (max-width : 480px) {
+  #view-root {
+    top: 7.7rem;
+  }
+  #bookContainer {
+    bottom: 20px;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 5px;
+  }
+  .book {
+    width: 80px;
+    height: 120px;
+    margin-top: 48px;
+    margin-left: 10px;
+  }
+  #menu {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+  .bookDetail .imgBook {
+    width: 100px;
+    height: 130px;
+  }
+  .bookDetail .imgBook img {
+    width: 100px;
+    height: 130px;
+  }
 }
