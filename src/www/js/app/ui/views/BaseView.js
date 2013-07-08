@@ -16,7 +16,7 @@ define(function(require) {
    */
   var BaseView = PageView.extend(function() {
     PageView.apply(this, arguments);
-    this.mapEvent('.cancel', 'tap', this.onTapCancel);
+    this.mapEvent('.cancel', 'tap', 'onTapCancel');
   }, {
 
     /**

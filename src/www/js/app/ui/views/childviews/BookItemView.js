@@ -15,7 +15,7 @@ define(function(require) {
 
       this.mapEvent({
         self: {
-          'click': this.showBookDetail.bind(this)
+          'click': 'showBookDetail'
         }
       });
 

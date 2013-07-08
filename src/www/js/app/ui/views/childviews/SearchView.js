@@ -14,7 +14,7 @@ define(function(require) {
 
     this.mapEvent({
       '#searchTerm': {
-        'change': this.search.bind(this)
+        'change': 'search'
       }
     });
 

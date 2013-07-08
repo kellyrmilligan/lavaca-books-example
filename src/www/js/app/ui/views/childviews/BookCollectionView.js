@@ -17,7 +17,7 @@ define(function(require) {
 
       this.mapEvent({
         model: {
-          fetchSuccess: this.onBookFetch.bind(this)
+          fetchSuccess: 'onBookFetch'
         }
       });
 

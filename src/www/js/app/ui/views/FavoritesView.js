@@ -18,8 +18,8 @@ define(function(require) {
 
     this.mapEvent({
       model: {
-        removeItem: this.onRemoveItem.bind(this),
-        addItem: this.onAddItem.bind(this)
+        removeItem: 'onRemoveItem',
+        addItem: 'onAddItem'
       }
     });
 

@@ -14,7 +14,7 @@ define(function(require) {
 
       this.mapEvent({
         '.favorite span': {
-          tap: this.onTapFavorite.bind(this)
+          tap: 'onTapFavorite'
         }
       });
 
