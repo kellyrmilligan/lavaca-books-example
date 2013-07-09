@@ -200,7 +200,10 @@ module.exports = function( grunt ) {
           port: 8080,
           vhost: 'localhost',
           base: 'src/www',
-          apiPrefix: '/api*'
+          apiPrefix: '/api',
+          apiBaseUrl: 'www.googleapis.com',
+          proxyPort: '443',
+          proxyProtocol: 'https'
         }
       },
       prod: {

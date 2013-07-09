@@ -3,6 +3,7 @@ define(function(require) {
   var BookModel = require('app/models/BookModel');
   var stateModel = require('app/models/StateModel');
   var favoriteCollection = require('app/collections/FavoriteCollection');
+  var Config = require('lavaca/util/Config');
 
   var BookCollection = Collection.extend(function() {
     Collection.apply(this, arguments);
@@ -24,7 +25,7 @@ define(function(require) {
      */
     itemsProperty: 'books',
 
-    url: 'https://www.googleapis.com/books/v1/volumes',
+    url: '/books/v1/volumes',
 
     maxResults: 40,
 
@@ -49,8 +50,11 @@ define(function(require) {
       }
       var opts = {};
 
+      var url = Config.get('apiPrefix') ? Config.get('apiPrefix') + this.url : Config.get('apiBaseUrl') + this.url;
+
       opts = {
-        dataType: 'jsonp',
+        dataType: Config.get('apiPrefix')? 'json' : 'jsonp',
+        url: url,
         data: {
           q: searchTerm,
           maxResults: this.maxResults,
