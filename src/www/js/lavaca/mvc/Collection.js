@@ -601,7 +601,9 @@ define(function(require) {
       list = response;
       if (!(list instanceof Array)) {
         this.apply(response);
-        list = response[this.itemsProperty];
+        if (response && response.hasOwnProperty(this.itemsProperty)) {
+          list = response[this.itemsProperty];
+        }
       }
       this.add.apply(this, list);
       this.trigger('fetchSuccess', {response: response});

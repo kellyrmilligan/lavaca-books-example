@@ -26,7 +26,7 @@ define(function(require) {
 
     url: 'https://www.googleapis.com/books/v1/volumes',
 
-    maxResults: 20,
+    maxResults: 40,
 
     page: 0,
 
@@ -79,28 +79,6 @@ define(function(require) {
       }
     },
 
-    /**
-     * @method onFetchSuccess
-     * Processes the data received from a fetch request
-     *
-     * @param {Object} response  The response data
-     */
-    onFetchSuccess: function(response) {
-      var list;
-      response = this.parse(response);
-      if (this.responseFilter && typeof this.responseFilter === 'function') {
-        response = this.responseFilter(response);
-      }
-      list = response;
-      if (!(list instanceof Array)) {
-        this.apply(response);
-        if (response && response.hasOwnProperty(this.itemsProperty)) {
-          list = response[this.itemsProperty];
-        }
-      }
-      this.add.apply(this, list);
-      this.trigger('fetchSuccess', {response: response});
-    },
 
     searchFailure: function(res) {
       stateModel.trigger("search:error", "Error, please retry later :s");
