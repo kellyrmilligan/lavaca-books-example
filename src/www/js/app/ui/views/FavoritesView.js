@@ -41,12 +41,12 @@ define(function(require) {
 
     bookViews: [],
 
-    initialize: function (e) {
-      this.ui=  {
-        books: this.el.find('.books'),
-        bookList: this.el.find('#bookList')
-      };
+    ui: {
+      books: '.books',
+      bookList: '#bookList'
+    },
 
+    initialize: function (e) {
       this.renderItemViews();
     },
 

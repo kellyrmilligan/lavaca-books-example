@@ -18,7 +18,6 @@ define(function(require) {
         }
       });
 
-
       stateModel.on('favorite:searchResult', this.onSearchResult, this);
       stateModel.trigger('favorite:search', { id: this.model.get('id')});
 

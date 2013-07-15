@@ -18,21 +18,10 @@ define(function(require) {
       }
     });
 
-    this.render();
-
-    this.ui= {
-      spinner: this.el.find('#spinner'),
-      searchTerm: this.el.find('#searchTerm')
-    };
-
     stateModel.on('search:start', this.toggleSpinner, this);
     stateModel.on('search:stop', this.toggleSpinner, this);
-
-    var term = this.model.get('term');
-    if (!term) {
-      term = 'CSS';
-    }
-    this.ui.searchTerm.val(term).change();
+    this.on('rendersuccess', this.initSearch, this);
+    this.render();
 
   }, {
     /**
@@ -48,6 +37,10 @@ define(function(require) {
      */
     className: 'search',
 
+    ui: {
+      spinner: '#spinner',
+      searchTerm: '#searchTerm'
+    },
 
     toggleSpinner: function (e) {
       if (e.start === 'start') {
@@ -55,6 +48,14 @@ define(function(require) {
       } else {
         this.ui.spinner.fadeOut();
       }
+    },
+
+    initSearch: function(e) {
+      var term = this.model.get('term');
+      if (!term) {
+        term = 'CSS';
+      }
+      this.ui.searchTerm.val(term).change();
     },
 
     search: function () {

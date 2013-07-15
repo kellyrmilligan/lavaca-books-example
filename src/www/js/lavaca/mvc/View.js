@@ -7,7 +7,8 @@ define(function(require) {
       Cache = require('lavaca/util/Cache'),
       Promise = require('lavaca/util/Promise'),
       log = require('lavaca/util/log'),
-      uuid = require('lavaca/util/uuid');
+      uuid = require('lavaca/util/uuid'),
+      clone = require('mout/lang/deepClone');
 
   /**
    * @class Lavaca.mvc.View
@@ -40,6 +41,8 @@ define(function(require) {
      * The model used by the view
      */
     this.model = model || null;
+
+    this.ui = clone(Object.getPrototypeOf(this).ui);
 
     /**
      * @field {String} id
@@ -105,6 +108,8 @@ define(function(require) {
     this.childViewEventMap = {};
 
     this
+
+    this
       .on('rendersuccess', this.onRenderSuccess)
       .on('rendererror', this.onRenderError);
 
@@ -136,6 +141,13 @@ define(function(require) {
      * When autoRender is set to true, the view when created from applyChildView will be rendered automatically
      */
     autoRender: false,
+    /**
+     * ui hash of jquery selectors
+     * @property ui
+     * @default {}
+     * @type {Object}
+     */
+    ui: {},
     /**
      * @method render
      * Renders the view using its template and model
@@ -364,6 +376,21 @@ define(function(require) {
         }
       }
     },
+
+    /**
+     * @method bindMappedEvents
+     */
+    bindMappedEvents: function() {
+      var callbacks,
+        delegate,
+        type;
+      for (delegate in this.eventMap) {
+        callbacks = this.eventMap[delegate];
+        for (type in callbacks) {
+          this.eventMap[delegate][type] = this[this.eventMap[delegate][type]].bind(this)
+        }
+      }
+    },
     /**
      * @method applyEvents
      * Binds events to the view
@@ -390,11 +417,7 @@ define(function(require) {
           } else {
             opts = undefined;
           }
-          if (typeof callback === 'string') {
-            if (callback in this) {
-              callback = this[callback].bind(this);
-            }
-          }
+
           if (delegate === 'model') {
             if (this.model && this.model instanceof Model) {
               dotIndex = type.indexOf('.');
@@ -619,6 +642,7 @@ define(function(require) {
      */
     onRenderSuccess: function(e) {
       this.el.html(e.html);
+      this.bindMappedEvents();
       this.applyEvents();
       this.createWidgets();
       this.createChildViews();
@@ -626,6 +650,18 @@ define(function(require) {
       this.el.data('view', this);
       this.el.attr('data-view-id', this.id);
       this.hasRendered = true;
+      this.createSelectorHash();
+    },
+
+    /**
+     * Create ui hash of jquery selectors to cache the selectors for use in the view
+     * @method createSelectorHash
+     */
+    createSelectorHash: function() {
+      var uiMap = this.ui;
+      for (key in uiMap) {
+        uiMap[key] = this.el.find(uiMap[key]);
+      }
     },
     /**
      * @method onRenderError
@@ -645,10 +681,10 @@ define(function(require) {
       if (this.model) {
         this.clearModelEvents();
       }
-      if (this.childViews.count) {
+      if (this.childViews.count()) {
         this.disposeChildViews(this.el);
       }
-      if (this.widgets.count) {
+      if (this.widgets.count()) {
         this.disposeWidgets(this.el);
       }
 

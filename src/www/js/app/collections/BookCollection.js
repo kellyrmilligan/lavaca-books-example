@@ -2,7 +2,6 @@ define(function(require) {
   var Collection = require('lavaca/mvc/Collection');
   var BookModel = require('app/models/BookModel');
   var stateModel = require('app/models/StateModel');
-  var favoriteCollection = require('app/collections/FavoriteCollection');
   var Config = require('lavaca/util/Config');
 
   var BookCollection = Collection.extend(function() {
@@ -10,17 +9,22 @@ define(function(require) {
 
     stateModel.on('search:term', this.search, this);
     stateModel.on('search:more', this.moreBooks, this);
+
+    this.page= 0;
+    this.loading = false;
+
+    this.totalItems = null;
+
+    this.previousSearch = null;
   },{
 
     /**
      * @field {Object} TModel
-     * @default [[BookCollection]]
      * The type of model object to use for items in this collection
      */
     TModel: BookModel,
     /**
      * @field {String} itemsProperty
-     * @default 'books'
      * The name of the property containing the collection's items when using toObject()
      */
     itemsProperty: 'books',
@@ -28,14 +32,6 @@ define(function(require) {
     url: '/books/v1/volumes',
 
     maxResults: 40,
-
-    page: 0,
-
-    loading: false,
-
-    totalItems: null,
-
-    previousSearch: null,
 
     search: function (e) {
       var searchTerm = e.term,
@@ -53,7 +49,7 @@ define(function(require) {
       var url = Config.get('apiPrefix') ? Config.get('apiPrefix') + this.url : Config.get('apiBaseUrl') + this.url;
 
       opts = {
-        dataType: Config.get('apiPrefix')? 'json' : 'jsonp',
+        dataType: Config.get('apiPrefix') ? 'json' : 'jsonp',
         url: url,
         data: {
           q: searchTerm,
@@ -62,7 +58,6 @@ define(function(require) {
           fields: 'totalItems,items(id,volumeInfo/title,volumeInfo/subtitle,volumeInfo/authors,volumeInfo/publishedDate,volumeInfo/description,volumeInfo/imageLinks)'
         }
       };
-
 
       stateModel.trigger("search:start", { start: 'start'});
 

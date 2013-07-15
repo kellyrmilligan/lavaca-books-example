@@ -12,7 +12,7 @@ define(function(require) {
    * @super Lavaca.mvc.View
    * Book Collection view type
    */
-  var BookCollectionView = View.extend(function () {
+  var BookCollectionView = View.extend(function BookCollectionView() {
       View.apply(this, arguments);
 
       this.mapEvent({
@@ -21,20 +21,18 @@ define(function(require) {
         }
       });
 
+      this.bookViewIndex = 0;
 
-      this.render();
-
-      this.el.find('#bookList').on('scroll', this.loadMoreBooks.bind(this));
-
-      this.ui=  {
-        books: this.el.find('.books'),
-        bookList: this.el.find('#bookList')
-      };
+      this.bookViews = [];
 
       stateModel.on('search:error', this.showMessage, this);
       stateModel.on('search:noSearchTerm', this.showMessage , this);
       stateModel.on('search:noResults', this.showMessage, this);
       stateModel.on('search:clearMessage', this.clearMessage, this);
+
+      this.render();
+
+      this.el.find('#bookList').on('scroll', this.loadMoreBooks.bind(this));
 
     }, {
     /**
@@ -52,9 +50,10 @@ define(function(require) {
 
     itemView: BookItemView,
 
-    bookViews: [],
-
-    bookViewIndex: 0,
+    ui: {
+      books: '.books',
+      bookList: '#bookList'
+    },
 
     onBookFetch: function (e) {
       var fragment = document.createDocumentFragment();
@@ -92,7 +91,6 @@ define(function(require) {
       stateModel.off('search:noSearchTerm', this.showMessage , this);
       stateModel.off('search:noResults', this.showMessage, this);
       stateModel.off('search:clearMessage', this.clearMessage, this);
-      stateModel.set('previousSearch', this.collection.previousSearch);
       this.el.find('#bookList').off('scroll', this.loadMoreBooks.bind(this));
       return View.prototype.dispose.apply(this, arguments);
     }

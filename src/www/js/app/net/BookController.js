@@ -28,7 +28,14 @@ define(function(require) {
         .view(null, BooksView, stateModel)
         .then(this.updateState(model, 'Books', params.url));
     },
-
+    /**
+     * @method favorites
+     * favorites action, creates a history state and shows a view
+     *
+     * @param {Object} params  Action arguments
+     * @param {Object} model  History state model
+     * @return {Lavaca.util.Promise}  A promise
+     */
     favorites: function(params, model) {
 
       return this
