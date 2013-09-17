@@ -10,7 +10,6 @@ define(function(require) {
   var Translation = require('lavaca/util/Translation');
   var localStore = require('./cache/localStore');
   var stateModel = require('app/models/StateModel');
-  var favoriteCollection = require('app/collections/FavoriteCollection');
   require('lavaca/ui/DustTemplate');
   require('jquery-mobile/events/touch');
   require('jquery-mobile/events/orientationchange');

@@ -107,7 +107,6 @@ define(function(require) {
      */
     this.childViewEventMap = {};
 
-    this
 
     this
       .on('rendersuccess', this.onRenderSuccess)
